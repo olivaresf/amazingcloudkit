@@ -9,7 +9,7 @@
 import Foundation
 import CloudKit
 
-public class CKDiscoveryCoordinator {
+public class CKSerialDiscoveryCoordinator {
 	
 	public enum UserDecision {
 		case granted
@@ -29,10 +29,18 @@ public class CKDiscoveryCoordinator {
 		self.container = container
 	}
 	
-	public enum UserDiscoverabilityError : Error {
+	public enum UserDiscoverabilityError : Error, CustomStringConvertible {
 		case ckContainer(Error)
 		case unknown(Error)
 		case invalidState
+		
+		public var description: String {
+			switch self {
+			case .ckContainer(let error): return error.localizedDescription
+			case .unknown(let error): return error.localizedDescription
+			case .invalidState: return "Invalid State"
+			}
+		}
 	}
 	
     public func discoverUser(email: String) throws -> CKUserIdentity? {
@@ -51,9 +59,9 @@ public class CKDiscoveryCoordinator {
         }
     }
     
-    public func fetchRecordIDForLoggedUser() throws -> CKRecord.ID? {
-        
-        return try await { (awaitCompletion: @escaping (Result<CKRecord.ID?, UserDiscoverabilityError>) -> Void) in
+    public func fetchRecordIDForLoggedUser() throws -> CKRecord.ID?  {
+		
+		return try await { (awaitCompletion: @escaping (Result<CKRecord.ID?, UserDiscoverabilityError>) -> Void) in
             
 			self.container.requestApplicationPermission(.userDiscoverability) { (status, error) in
                 
@@ -78,6 +86,45 @@ public class CKDiscoveryCoordinator {
                 }
             }
         }
+    }
+	
+	func another() {
+		let result = fetchRecordIDForLoggedUser_result()
+		do {
+			let result = try result.get()
+		} catch error as UserDiscoverabilityError {
+			
+		} catch {
+			
+		}
+	}
+	
+	public func fetchRecordIDForLoggedUser_result() -> Result<CKRecord.ID?, UserDiscoverabilityError>  {
+		return await { (awaitCompletion: @escaping (Result<CKRecord.ID?, UserDiscoverabilityError>) -> Void) in
+			
+			self.container.requestApplicationPermission(.userDiscoverability) { (status, error) in
+				
+				guard error == nil else {
+					awaitCompletion(.failure(.ckContainer(error!)))
+					return
+				}
+				
+				guard status == .granted else {
+					awaitCompletion(.failure(.invalidState))
+					return
+				}
+				
+				CKContainer.default().fetchUserRecordID { possibleIdentity, error in
+					
+					guard error == nil else {
+						awaitCompletion(.failure(.ckContainer(error!)))
+						return
+					}
+					
+					awaitCompletion(.success(possibleIdentity))
+				}
+			}
+		}
     }
     
     public func fetchUserIdentity(from recordID: CKRecord.ID) throws -> CKUserIdentity {

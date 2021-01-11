@@ -7,23 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B1FA5892473458F00DFA258 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1FA5882473458F00DFA258 /* Extensions.swift */; };
 		9B2217C923BAB6B900A58CF2 /* AmazingCloudKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B2217C723BAB6B900A58CF2 /* AmazingCloudKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9B2217D323BAB6CF00A58CF2 /* CKAcceptShareCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2217CF23BAB6CF00A58CF2 /* CKAcceptShareCoordinator.swift */; };
-		9B2217D423BAB6CF00A58CF2 /* CKDatabaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2217D023BAB6CF00A58CF2 /* CKDatabaseCoordinator.swift */; };
-		9B2217D523BAB6CF00A58CF2 /* CKDiscoveryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2217D123BAB6CF00A58CF2 /* CKDiscoveryCoordinator.swift */; };
-		9B2217D623BAB6CF00A58CF2 /* CKPostShareCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2217D223BAB6CF00A58CF2 /* CKPostShareCoordinator.swift */; };
-		9B2217E323BAB76C00A58CF2 /* Await-Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2217E223BAB76C00A58CF2 /* Await-Result.swift */; };
+		9B2217D523BAB6CF00A58CF2 /* DiscoveryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2217D123BAB6CF00A58CF2 /* DiscoveryService.swift */; };
+		9B28718D2470320B00105CF1 /* CKRecordConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B28718C2470320B00105CF1 /* CKRecordConvertible.swift */; };
+		9B2C6A2524526572009B4086 /* InviteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C6A2424526572009B4086 /* InviteService.swift */; };
+		9B2C6A27245267C5009B4086 /* CustomZoneCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C6A26245267C5009B4086 /* CustomZoneCreator.swift */; };
+		9B2C6A4924539D3F009B4086 /* SubscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C6A4824539D3F009B4086 /* SubscriptionService.swift */; };
+		9B2C6A4B2453C78A009B4086 /* CustomZoneFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C6A4A2453C78A009B4086 /* CustomZoneFetcher.swift */; };
+		9B2C6A4F2453D052009B4086 /* AllAppUsersDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C6A4E2453D052009B4086 /* AllAppUsersDatabase.swift */; };
+		9B2C6A512453D07F009B4086 /* AuthenticatedUserDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C6A502453D07F009B4086 /* AuthenticatedUserDatabase.swift */; };
+		9B2C6A532453D099009B4086 /* FriendsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C6A522453D099009B4086 /* FriendsDatabase.swift */; };
+		9B8D4FAE24690E33006490BC /* ReadableZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D4FAD24690E33006490BC /* ReadableZone.swift */; };
+		9B8D4FB024690E5B006490BC /* WritableZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D4FAF24690E5B006490BC /* WritableZone.swift */; };
+		9B8D4FB224698994006490BC /* AmazingUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D4FB124698994006490BC /* AmazingUser.swift */; };
+		9B9DB0C82447BDC900746073 /* AmazingCloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9DB0C72447BDC900746073 /* AmazingCloudKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B1FA5882473458F00DFA258 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9B2217C423BAB6B900A58CF2 /* AmazingCloudKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AmazingCloudKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B2217C723BAB6B900A58CF2 /* AmazingCloudKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmazingCloudKit.h; sourceTree = "<group>"; };
 		9B2217C823BAB6B900A58CF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9B2217CF23BAB6CF00A58CF2 /* CKAcceptShareCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKAcceptShareCoordinator.swift; sourceTree = "<group>"; };
-		9B2217D023BAB6CF00A58CF2 /* CKDatabaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKDatabaseCoordinator.swift; sourceTree = "<group>"; };
-		9B2217D123BAB6CF00A58CF2 /* CKDiscoveryCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKDiscoveryCoordinator.swift; sourceTree = "<group>"; };
-		9B2217D223BAB6CF00A58CF2 /* CKPostShareCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKPostShareCoordinator.swift; sourceTree = "<group>"; };
-		9B2217E223BAB76C00A58CF2 /* Await-Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Await-Result.swift"; sourceTree = "<group>"; };
+		9B2217D123BAB6CF00A58CF2 /* DiscoveryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveryService.swift; sourceTree = "<group>"; };
+		9B28718C2470320B00105CF1 /* CKRecordConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKRecordConvertible.swift; sourceTree = "<group>"; };
+		9B2C6A2424526572009B4086 /* InviteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteService.swift; sourceTree = "<group>"; };
+		9B2C6A26245267C5009B4086 /* CustomZoneCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomZoneCreator.swift; sourceTree = "<group>"; };
+		9B2C6A4824539D3F009B4086 /* SubscriptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionService.swift; sourceTree = "<group>"; };
+		9B2C6A4A2453C78A009B4086 /* CustomZoneFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomZoneFetcher.swift; sourceTree = "<group>"; };
+		9B2C6A4E2453D052009B4086 /* AllAppUsersDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAppUsersDatabase.swift; sourceTree = "<group>"; };
+		9B2C6A502453D07F009B4086 /* AuthenticatedUserDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedUserDatabase.swift; sourceTree = "<group>"; };
+		9B2C6A522453D099009B4086 /* FriendsDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsDatabase.swift; sourceTree = "<group>"; };
+		9B8D4FAD24690E33006490BC /* ReadableZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadableZone.swift; sourceTree = "<group>"; };
+		9B8D4FAF24690E5B006490BC /* WritableZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritableZone.swift; sourceTree = "<group>"; };
+		9B8D4FB124698994006490BC /* AmazingUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazingUser.swift; sourceTree = "<group>"; };
+		9B9DB0C72447BDC900746073 /* AmazingCloudKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazingCloudKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +76,38 @@
 			children = (
 				9B2217C723BAB6B900A58CF2 /* AmazingCloudKit.h */,
 				9B2217C823BAB6B900A58CF2 /* Info.plist */,
-				9B2217E223BAB76C00A58CF2 /* Await-Result.swift */,
-				9B2217CF23BAB6CF00A58CF2 /* CKAcceptShareCoordinator.swift */,
-				9B2217D023BAB6CF00A58CF2 /* CKDatabaseCoordinator.swift */,
-				9B2217D123BAB6CF00A58CF2 /* CKDiscoveryCoordinator.swift */,
-				9B2217D223BAB6CF00A58CF2 /* CKPostShareCoordinator.swift */,
+				9B9DB0C72447BDC900746073 /* AmazingCloudKit.swift */,
+				9B8D4FB124698994006490BC /* AmazingUser.swift */,
+				9B28718C2470320B00105CF1 /* CKRecordConvertible.swift */,
+				9B2C6A542453E3C4009B4086 /* Database */,
+				9B2C6A552453E3DE009B4086 /* Services */,
 			);
 			path = AmazingCloudKit;
+			sourceTree = "<group>";
+		};
+		9B2C6A542453E3C4009B4086 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				9B2C6A4E2453D052009B4086 /* AllAppUsersDatabase.swift */,
+				9B2C6A502453D07F009B4086 /* AuthenticatedUserDatabase.swift */,
+				9B2C6A522453D099009B4086 /* FriendsDatabase.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		9B2C6A552453E3DE009B4086 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9B8D4FAD24690E33006490BC /* ReadableZone.swift */,
+				9B8D4FAF24690E5B006490BC /* WritableZone.swift */,
+				9B2C6A26245267C5009B4086 /* CustomZoneCreator.swift */,
+				9B2C6A4A2453C78A009B4086 /* CustomZoneFetcher.swift */,
+				9B2C6A2424526572009B4086 /* InviteService.swift */,
+				9B2C6A4824539D3F009B4086 /* SubscriptionService.swift */,
+				9B2217D123BAB6CF00A58CF2 /* DiscoveryService.swift */,
+				9B1FA5882473458F00DFA258 /* Extensions.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,11 +190,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B2217E323BAB76C00A58CF2 /* Await-Result.swift in Sources */,
-				9B2217D323BAB6CF00A58CF2 /* CKAcceptShareCoordinator.swift in Sources */,
-				9B2217D523BAB6CF00A58CF2 /* CKDiscoveryCoordinator.swift in Sources */,
-				9B2217D623BAB6CF00A58CF2 /* CKPostShareCoordinator.swift in Sources */,
-				9B2217D423BAB6CF00A58CF2 /* CKDatabaseCoordinator.swift in Sources */,
+				9B2C6A2524526572009B4086 /* InviteService.swift in Sources */,
+				9B8D4FB024690E5B006490BC /* WritableZone.swift in Sources */,
+				9B2C6A512453D07F009B4086 /* AuthenticatedUserDatabase.swift in Sources */,
+				9B2C6A532453D099009B4086 /* FriendsDatabase.swift in Sources */,
+				9B2C6A4B2453C78A009B4086 /* CustomZoneFetcher.swift in Sources */,
+				9B2C6A4F2453D052009B4086 /* AllAppUsersDatabase.swift in Sources */,
+				9B28718D2470320B00105CF1 /* CKRecordConvertible.swift in Sources */,
+				9B2217D523BAB6CF00A58CF2 /* DiscoveryService.swift in Sources */,
+				9B8D4FAE24690E33006490BC /* ReadableZone.swift in Sources */,
+				9B2C6A27245267C5009B4086 /* CustomZoneCreator.swift in Sources */,
+				9B2C6A4924539D3F009B4086 /* SubscriptionService.swift in Sources */,
+				9B8D4FB224698994006490BC /* AmazingUser.swift in Sources */,
+				9B9DB0C82447BDC900746073 /* AmazingCloudKit.swift in Sources */,
+				9B1FA5892473458F00DFA258 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
