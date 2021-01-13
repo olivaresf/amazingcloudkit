@@ -71,7 +71,7 @@ Alice has selected a record and wants to modify it (e.g. upload a photo to a not
 3. Save the record
 
 Smaller, but annoying issues:
-- Welcome to await hell.
+- Welcome to closure hell.
 - Databases are _always_ available, so you can execute queries against them. Meaning, if the user is logged out, they can still attempt to write to their private database which will fail.
 - The public database is available read-only always but write access is only enabled for logged users.
 - You cannot create custom zones in the public database.
