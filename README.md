@@ -4,7 +4,7 @@ CloudKit isn't as straightforward as a lot of Apple frameworks. There are many s
 
 ## The Facts
 
-The hierarchy of objects in Core Data goes something like this:
+The hierarchy of objects in CloudKit goes something like this:
 
 Containers:
 - subclasses of `CKContainer`
